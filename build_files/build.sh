@@ -13,7 +13,7 @@ log() {
     echo "|---# $& #---|"
 }
 
-. /install-packages.sh
+. /ctx/install-packages.sh
 
 dnf5 clean all
 
