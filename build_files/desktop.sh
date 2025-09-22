@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -ouex pipefail
 echo "[DESKTOP] Installing..."
 

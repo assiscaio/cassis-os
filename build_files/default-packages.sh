@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -ouex pipefail
 echo "[BASE] Installing..."
 dnf -y copr enable ublue-os/packages
