@@ -2,24 +2,40 @@
 
 set -ouex pipefail
 echo "[DESKTOP] Installing..."
+dnf5 -y copr enable solopasha/hyprland 
 
 PACKAGES=(
 	wofi
+	hyprland-git
 	hyprutils
-	hyprland
+	hyprnome
+	pyprland
+	hyprqt6engine
 	hyprcursor
-	sway
-	sway-systemd
-	swayimg
-	swaylock
-	swayidle
-	swaybg
+	hyprpaper
+	hyprpanel
+	hypridle
+	hyprsunset
+	hyprland-contrib
+	hyprland-plugins-git
+	swww
+	eww-git
+	qt6ct-kde
+	# sway
+	# sway-systemd
+	# swayimg
+	# swaylock
+	# swayidle
+	# swaybg
 	slurp
 	wf-recorder
-	waybar
+	waybar-git
 	grim
 	azote
 )
 
+
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
 echo "[DESKTOP] packages installed successfully"
+
+dnf5 copr disable solopasha/hyprland 

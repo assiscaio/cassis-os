@@ -1,9 +1,11 @@
+# Base Image
+ARG IMAGE=kinoite
+
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 COPY build_files /
 
-# Base Image
-FROM ghcr.io/ublue-os/kinoite-nvidia:42
+FROM ghcr.io/ublue-os/${IMAGE}-nvidia:42
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \

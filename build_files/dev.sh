@@ -21,10 +21,16 @@ PACKAGES=(
     gh
 	git
 	patch
+	node
+	npm
+	pnpm
 )
 
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
-echo "[DEV] packages installed successfully"
+echo "[DEV] Packages installed successfully"
+# echo "[DEV] Installing copilot"
+# 	/usr/bin/npm install -g @github/copilot
+# echo "[DEV] Copilot installed"
 
 echo "Installing DevPod"
 curl -Lo /tmp/devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" 
