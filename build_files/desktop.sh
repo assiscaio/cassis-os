@@ -8,6 +8,7 @@ PACKAGES=(
 	wofi
 	hyprland-git
 	hyprutils
+	hyprland-qtutils
 	hyprnome
 	pyprland
 	hyprqt6engine
@@ -18,6 +19,7 @@ PACKAGES=(
 	hyprsunset
 	hyprland-contrib
 	hyprland-plugins-git
+	satty
 	swww
 	eww-git
 	qt6ct-kde
