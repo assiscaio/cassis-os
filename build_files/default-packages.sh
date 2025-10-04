@@ -25,6 +25,7 @@ PACKAGES=(
 	ublue-setup-services
 	pulseaudio-utils
 	kitty
+	alacritty
 )
 
 echo "Instalando Starship"
