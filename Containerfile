@@ -1,5 +1,5 @@
 # Base Image
-ARG IMAGE=silverblue
+ARG IMAGE=kinoite
 
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx

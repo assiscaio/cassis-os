@@ -26,6 +26,7 @@ PACKAGES=(
 	pulseaudio-utils
 	kitty
 	alacritty
+	rubygem-json # Necessario para o brew
 )
 
 echo "Instalando Starship"
