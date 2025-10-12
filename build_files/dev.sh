@@ -21,9 +21,6 @@ PACKAGES=(
     gh
 	git
 	patch
-	node
-	npm
-	pnpm
 )
 
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
