@@ -33,7 +33,6 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
-	budgie-desktop
 )
 
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
