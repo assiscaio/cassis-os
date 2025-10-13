@@ -9,24 +9,26 @@ PACKAGES=(
     atuin
     bat
     btop
-	cascadia-code-fonts
-	make
+    cascadia-code-fonts
+    make
     direnv
-	distrobox
-	fira-code-fonts
-	jetbrains-mono-fonts-all
-	glow
-	powerline-fonts
-	tmux
+    distrobox
+    fira-code-fonts
+    jetbrains-mono-fonts-all
+    glow
+    powerline-fonts
+    tmux
     yq
     zoxide
-	ublue-brew
-	ublue-fastfetch
-	ublue-setup-services
-	pulseaudio-utils
-	kitty
-	alacritty
-	rubygem-json # Necessario para o brew
+    ublue-brew
+    ublue-fastfetch
+    ublue-setup-services
+    pulseaudio-utils
+    kitty
+    alacritty
+    rubygem-json # Necessario para o brew
+    qemu-kvm
+    virt-manager
 )
 
 echo "Instalando Starship"

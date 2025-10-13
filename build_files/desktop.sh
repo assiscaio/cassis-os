@@ -22,7 +22,6 @@ PACKAGES=(
 	satty
 	swww
 	eww-git
-	qt6ct-kde
 	# sway
 	# sway-systemd
 	# swayimg
