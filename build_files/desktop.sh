@@ -22,21 +22,23 @@ PACKAGES=(
 	satty
 	swww
 	eww-git
-	# sway
-	# sway-systemd
-	# swayimg
-	# swaylock
-	# swayidle
-	# swaybg
+	sway
+	sway-systemd
+	swayimg
+	swaylock
+	swayidle
+	swaybg
 	slurp
 	wf-recorder
-	#waybar-git
+	waybar-git
 	grim
 	azote
+	budgie-desktop
 )
 
-
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
+
+
 echo "[DESKTOP] packages installed successfully"
 
 dnf5 copr disable solopasha/hyprland 
