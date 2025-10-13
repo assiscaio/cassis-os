@@ -29,6 +29,10 @@ PACKAGES=(
     rubygem-json # Necessario para o brew
     qemu-kvm
     virt-manager
+    libvirt
+    libvirt-client
+    libvirt-nss
+    virt-viewer
 )
 
 echo "Instalando Starship"

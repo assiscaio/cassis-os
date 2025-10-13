@@ -30,7 +30,7 @@ PACKAGES=(
 	# swaybg
 	slurp
 	wf-recorder
-	waybar-git
+	#waybar-git
 	grim
 	azote
 )
