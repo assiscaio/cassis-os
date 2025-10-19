@@ -33,6 +33,7 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
+	cinnamon
 )
 
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
