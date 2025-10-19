@@ -34,6 +34,8 @@ PACKAGES=(
 	grim
 	azote
 	cinnamon
+	cinnamon-desktop
+	cinnamon-session
 )
 
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
