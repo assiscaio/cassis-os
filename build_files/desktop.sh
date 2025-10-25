@@ -3,6 +3,7 @@
 set -ouex pipefail
 echo "[DESKTOP] Installing..."
 dnf5 -y copr enable solopasha/hyprland 
+dnf5 -y copr enable peterwu/iosevka
 
 PACKAGES=(
 	wofi
@@ -34,6 +35,7 @@ PACKAGES=(
 	grim
 	azote
 	gnome-tweaks
+	iosevka
 #	cinnamon
 #	cinnamon-desktop
 #	cinnamon-session
@@ -45,3 +47,4 @@ dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
 echo "[DESKTOP] packages installed successfully"
 
 dnf5 copr disable solopasha/hyprland 
+dnf5 copr disable peterwu/iosevka
