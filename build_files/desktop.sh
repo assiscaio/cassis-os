@@ -35,7 +35,7 @@ PACKAGES=(
 	grim
 	azote
 	gnome-tweaks
-	iosevka
+	iosevka-aile
 #	cinnamon
 #	cinnamon-desktop
 #	cinnamon-session
