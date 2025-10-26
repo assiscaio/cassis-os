@@ -35,14 +35,21 @@ PACKAGES=(
 	grim
 	azote
 	gnome-tweaks
-	iosevka-aile
 #	cinnamon
 #	cinnamon-desktop
 #	cinnamon-session
 )
 
-dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
+PACKAGES_FONTS=(
+    iosevka-term-ss15-fonts
+    iosevka-term-ss12-fonts
+    iosevka-term-ss04-fonts
+    iosevka-term-ss07-fonts
+)
+    
 
+dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
+dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES_FONTS[@]}"
 
 echo "[DESKTOP] packages installed successfully"
 
