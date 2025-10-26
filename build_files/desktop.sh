@@ -34,10 +34,10 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
-#	gnome-tweaks
-#	cinnamon
-#	cinnamon-desktop
-#	cinnamon-session
+	lxqt-wayland-session
+	lxqt-themes
+	lxqt-runner
+	lxqt-qtplugin
 )
 
 PACKAGES_FONTS=(

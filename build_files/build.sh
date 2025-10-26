@@ -10,9 +10,9 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 . /ctx/default-packages.sh
+. /ctx/desktop.sh
 . /ctx/games.sh
 . /ctx/dev.sh
-. /ctx/desktop.sh
 
 dnf5 clean all
 
