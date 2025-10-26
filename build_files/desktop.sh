@@ -34,7 +34,7 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
-	gnome-tweaks
+#	gnome-tweaks
 #	cinnamon
 #	cinnamon-desktop
 #	cinnamon-session
