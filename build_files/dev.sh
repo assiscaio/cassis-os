@@ -16,18 +16,15 @@ EOF
 
 PACKAGES=(
     neovim
-	code
     emacs
     gh
-	git
-	patch
+    git
+    patch
 )
 
+dnf5 install --setopt=install_weak_deps=False -y --skip-unavailable code
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
 echo "[DEV] Packages installed successfully"
-# echo "[DEV] Installing copilot"
-# 	/usr/bin/npm install -g @github/copilot
-# echo "[DEV] Copilot installed"
 
 echo "Installing DevPod"
 curl -Lo /tmp/devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" 
