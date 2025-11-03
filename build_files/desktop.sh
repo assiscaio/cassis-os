@@ -12,7 +12,6 @@ PACKAGES=(
 	hyprland-qtutils
 	hyprnome
 	pyprland
-	hyprqt6engine
 	hyprcursor
 	hyprpaper
 	hyprpanel
@@ -34,10 +33,6 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
-	lxqt-wayland-session
-	lxqt-themes
-	lxqt-runner
-	lxqt-qtplugin
 )
 
 PACKAGES_FONTS=(
