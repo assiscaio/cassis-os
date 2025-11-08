@@ -9,7 +9,6 @@ PACKAGES=(
 	wofi
 	hyprland-git
 	hyprutils
-	hyprland-qtutils
 	hyprnome
 	pyprland
 	hyprcursor
