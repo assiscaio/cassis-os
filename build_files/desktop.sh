@@ -45,6 +45,8 @@ PACKAGES_FONTS=(
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES_FONTS[@]}"
 
+dnf5 group install cosmic-desktop cosmic-desktop-apps
+
 echo "[DESKTOP] packages installed successfully"
 
 dnf5 copr disable solopasha/hyprland 
