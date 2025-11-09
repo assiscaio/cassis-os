@@ -45,7 +45,7 @@ PACKAGES_FONTS=(
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES_FONTS[@]}"
 
-dnf5 group install cosmic-desktop cosmic-desktop-apps
+dnf5 group install -y cosmic-desktop cosmic-desktop-apps
 
 echo "[DESKTOP] packages installed successfully"
 
