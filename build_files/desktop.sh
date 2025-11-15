@@ -4,7 +4,7 @@ set -ouex pipefail
 echo "[DESKTOP] Installing..."
 dnf5 -y copr enable solopasha/hyprland 
 dnf5 -y copr enable peterwu/iosevka
-
+dnf5 -y copr enable tylerjgriffiths/stumpwm 
 PACKAGES=(
 	wofi
 	hyprland-git
@@ -32,6 +32,8 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
+	kde-connect
+	stumpwm
 )
 
 PACKAGES_FONTS=(
@@ -45,9 +47,8 @@ PACKAGES_FONTS=(
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES[@]}"
 dnf5 install --setopt=install_weak_deps=False -y "${PACKAGES_FONTS[@]}"
 
-dnf5 group install -y cosmic-desktop cosmic-desktop-apps
-
 echo "[DESKTOP] packages installed successfully"
 
 dnf5 copr disable solopasha/hyprland 
 dnf5 copr disable peterwu/iosevka
+dnf5 copr disable tylerjgriffiths/stumpwm 
