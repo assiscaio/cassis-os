@@ -32,7 +32,6 @@ PACKAGES=(
 	waybar-git
 	grim
 	azote
-	stumpwm
 )
 
 PACKAGES_FONTS=(
