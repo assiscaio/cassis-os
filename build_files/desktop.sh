@@ -4,7 +4,7 @@ set -ouex pipefail
 echo "[DESKTOP] Installing..."
 dnf5 -y copr enable solopasha/hyprland 
 dnf5 -y copr enable peterwu/iosevka
-dnf5 -y copr enable tylerjgriffiths/stumpwm 
+
 PACKAGES=(
 	wofi
 	hyprland-git
@@ -18,6 +18,10 @@ PACKAGES=(
 	hyprsunset
 	hyprland-contrib
 	hyprland-plugins-git
+	niri
+	river
+	WindowMaker
+	WindowMaker-extra
 	satty
 	swww
 	eww-git
@@ -49,4 +53,3 @@ echo "[DESKTOP] packages installed successfully"
 
 dnf5 copr disable solopasha/hyprland 
 dnf5 copr disable peterwu/iosevka
-dnf5 copr disable tylerjgriffiths/stumpwm 
